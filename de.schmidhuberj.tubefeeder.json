@@ -36,6 +36,10 @@
         }
     },
     "modules": [
+        "lib/libsass.json",
+        "lib/sassc.json",
+        "lib/gtk4.json",
+        "lib/libadwaita.json",
         {
             "name": "blueprint-compiler",
             "buildsystem": "meson",

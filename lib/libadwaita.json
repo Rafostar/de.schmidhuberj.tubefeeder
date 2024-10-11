@@ -1,0 +1,21 @@
+{
+    "name": "libadwaita",
+    "buildsystem": "meson",
+    "config-opts": [
+        "--buildtype=release",
+        "--wrap-mode=nofallback",
+        "-Dintrospection=enabled",
+        "-Dvapi=false",
+        "-Dgtk_doc=false",
+        "-Dtests=false",
+        "-Dexamples=false"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+            "tag": "1.5.4",
+            "commit": "8c7b75cbbd564377406acaa4ee8aae27e0523ee5"
+        }
+    ]
+}

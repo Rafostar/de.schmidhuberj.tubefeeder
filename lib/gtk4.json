@@ -1,0 +1,24 @@
+{
+    "name": "gtk",
+    "buildsystem": "meson",
+    "config-opts": [
+        "--buildtype=release",
+        "--wrap-mode=nodownload",
+        "-Dwin32-backend=false",
+        "-Dmacos-backend=false",
+        "-Dprint-cups=disabled",
+        "-Dintrospection=enabled",
+        "-Ddemos=false",
+        "-Dbuild-testsuite=false",
+        "-Dbuild-examples=false",
+        "-Dbuild-tests=false"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+            "tag": "4.14.5",
+            "commit": "320f27a2022a88afdaef7248608fcf7e1f970803"
+        }
+    ]
+}
