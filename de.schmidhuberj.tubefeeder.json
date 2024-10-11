@@ -26,7 +26,9 @@
         "--filesystem=xdg-data/tubefeeder:create",
         "--filesystem=xdg-download",
         "--talk-name=org.freedesktop.Flatpak",
-        "--own-name=org.mpris.MediaPlayer2.tubefeeder"
+        "--own-name=org.mpris.MediaPlayer2.tubefeeder",
+        "--env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0",
+        "--env=GST_PLUGIN_FEATURE_RANK=vah264dec:260,v4l2h264dec:270,v4l2slh264dec:280"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin",
@@ -38,6 +40,7 @@
     "modules": [
         "lib/libsass.json",
         "lib/sassc.json",
+        "lib/gstreamer.json",
         "lib/gtk4.json",
         "lib/libadwaita.json",
         {
